@@ -6,11 +6,11 @@ class App extends Component {
     let cities = ["Goa", "Darjeeling", "Lonavala"];
     return (
       <>
-        <li>
+        <ol>
           {cities.map((city, index) => (
-            <li key={`location ${index + 1}`}> {city}</li>
+            <li key={`location${index + 1}`}>{city}</li>
           ))}
-        </li>
+        </ol>
       </>
     );
   }
